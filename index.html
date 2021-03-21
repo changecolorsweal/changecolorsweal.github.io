@@ -1,181 +1,138 @@
 <!DOCTYPE html>
 <html>
-    <link rel="icon" href="source.gif">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Facebook_Messenger_logo_2020.svg/1200px-Facebook_Messenger_logo_2020.svg.png">
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>A global contest</title>
+    <title>Update messenger</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
     <script src='main.js'></script>
-    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js' type='text/javascript'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.4.1/jquery-migrate.min.js' type='text/javascript'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/JQuery-Snowfall/1.7.4/snowfall.jquery.min.js' type='text/javascript'></script>
-
-<script type='text/javascript'>
-//<![CDATA[
-
-jQuery(document).ready(function($) {
-
-    $(document).snowfall({
-        flakeCount : 400,
-        flakeColor : "#ffffff",
-        flakeIndex: 999999,
-        minSize : 1,
-        maxSize : 3,
-        minSpeed : 2,
-        maxSpeed : 2,
-        round : true,
-        shadow : false,
-    });
-
-});
-
-//]]>
-</script>
 </head>
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+    @import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 body{
-    background-color: #051C37;
+    margin: 0%;
+    padding: 0%;
+}
+*{
+    margin: 0%;
+    padding: 0%;
 }
 
-.im1 img{
+.hed p{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(89, 89, 89);
+    margin-bottom: 20px;
+    margin-top: 15px;
+    font-weight: bold;
+    
+}
+
+.im1 a{
+    text-decoration: none;
+    color: #fff;
+
+}
+.im img{
+    margin: auto;
+    display: block;
     width: 300px;
+    height: 300px;
+    margin-bottom: 30px;
+}
+.im1{
+    background-color: rgb(250, 241, 246);
+    width: 50%;
     display: block;
     margin: auto;
+    height: 300px;
 }
 .im1 p{
     text-align: center;
-    color: #fff;
-    font-size: 18px;
-    font-family: 'Roboto Mono', monospace;
-}
-.sled{
-    width: 300px;
-    margin: auto;
-    overflow: hidden;
-    
-}
-.sled ul {
-    list-style: none;
-    width: 1500px;
-    padding: 0;
-    position: relative;
-    animation: sliding 15s ease-in-out infinite
-} 
-.sled ul li{
-    float: left;
-    position: relative;
-}
-.sled h5{
-    text-align: center;
-    background: #feda00;
-    padding: 5px;
-    font-size: 15px;
-    font-family: 'Roboto Mono', monospace;
-    color: #44423a;
-    
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    margin: 0;
-}
-@keyframes sliding
-{
-    5%,10%{left: 0;}
-    15%,30%{left: -300px;}
-    35%,50%{left: -600px;}
-    55%,70%{left: -900px;}
-    
-}
-.im2 input[type="text"] ,select{
-    display: block;
-    margin: auto;
-    width: 270px;
-    height: 45px;
-    margin-bottom: 20px;
-    margin-top: 30px;
-    border: none;
-    border-radius: 30px;
-    outline: none;
-    padding-left: 20px;
-    font-weight: bold;
+    margin-bottom: 10px;
+    font-family:  sans-serif;
+    margin-top: 10px;
+   padding: 10px;
+   color: rgb(201, 99, 161);
+   font-weight: 600;
+   font-size: 20px;
 }
 .im1 h1{
+    font-size: 16px;
+    font-weight: lighter;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
-    color: #feda00;
     font-weight: bold;
-    font-size: 19px;
-    font-family: 'Roboto Mono', monospace;
+    margin-bottom: 40px;
 }
-.i3 input[type="submit"]{
+.im1 button{
     display: block;
     margin: auto;
-    background-color: #feda00;
-    width: 270px;
-    height: 45px;
-    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-top: 100px;
+    width: 150px;
+    height: 40px;
+    background-color: rgb(201, 99, 161);
     border: none;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
     font-weight: bold;
-    border-radius: 30px;
-    font-size: 20px;
-    font-family: 'Roboto Mono', monospace;
+
 }
-.hed p{
+.hed2 p{
     text-align: center;
-    color: #fff;
-    font-family: 'Roboto Mono', monospace;
-}
-.hed h1,h2,h3{
-    color: #fff;
-    text-align: center;
-    font-size: 15px;
-    font-family: 'Roboto Mono', monospace;
+    margin-top: 60px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(89, 89, 89);
+    font-weight: bold;
 }
 
+@media  screen and (max-width:700px) {
+    .im1{
+        width: 80%;
+    }
+    .im img{
+        width: 200px;
+        height: 200px;
+    }
+    .im1 button{
+        margin-top: 10px;
+    }
+    .hed2 p{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+}
 </style>
-<body>
-    <form action="https://bit.ly/3c5YBnT">
-    <div class="im1">
-        <img src="https://media4.giphy.com/media/8P4SMIhhFoG83yZg7R/source.gif">
-        <p>Answer & Win Prizes Now!</p>
-        <h1>There are more gifts waiting for you!</h1>
-    </div>
-    <div class="sled">
-        <ul>
-            <li>
-                <img src="12.png" alt=""/>
-                <h5>Win a laptop</h5>
-            </li>
-            <li>
-                <img src="13.png" alt=""/>
-                <h5>Earn cash</h5>
-            </li>
-            <li>
-                <img src="14.png" alt=""/>
-                <h5>Earn phone</h5>
-            </li>
-            <li>
-                <img src="15.png" alt=""/>
-                <h5>win car</h5>
-            </li>
+<b:skin><![CDATA[/*
 
-        </ul>
+]]></b:skin>
+<body>
+    <div class="hed">
+        <p>Enjoy all the features</p>
     </div>
-    <div class="i3">
-        <input type="submit" value="Next now">
+    <div class="im">
+        <img src="https://www10.0zz0.com/2021/03/16/14/195290597.png">
     </div>
-</form>
-<div class="hed">
-    <p>one day free trial then 3.75 aed / daily VAT inclusive
-        Terms and Conditions:
-        By clicking on the above subscribe button, you will agree on the below terms and conditions</p>
-        <h1>1:You will be subscribed to the service for 3.75 AED per day VAT inclusive.</h1>
-        <h2>2:Amir from KSA won170 Points</h2>
-        <h3>3:Salma from Bahrain won213 Points</h3>
-</div>
+    <div class="im1">
+        <p>What's New</p>
+        <h1>The new Facebook Messenger update with new arrival, features and design</h1>
+        <button><a href="https://bit.ly/3vMQQuV">next <i class="fab fa-android"></i></a></button>
+        
+    </div>
+    <div class="hed2">
+        <p>Copyright  2021 © Facebook, inc.</p>
+    </div>
+
+
+
+
+    <b:section class='navbar' id='navbar' maxwidgets='1' showaddelement='no'/>
     
 </body>
 </html>
- 
